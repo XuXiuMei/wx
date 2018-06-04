@@ -1,0 +1,23 @@
+<view class="container">
+ <video id="myVideo" src="{{newsdata.videoSrc}}"   enable-danmu  controls></video>
+  <image src="{{newsdata.imgSrc}}" class="audio"></image>
+  <view class="author">
+    <image src="{{newsdata.avatar}}" class="authorPic"></image>
+    <text class='authorName'>{{newsdata.authorName}}</text>
+    <text class="action">发表于</text>
+    <text class='authorTime'>{{newsdata.dataTime}}</text>
+  </view>
+  <text class="newsTitle">{{newsdata. title}}</text>
+  <view class="cs">
+    <view class="csPic">
+       <image wx:if="{{collected}}" src="/images/icon/collection.png" class="cPic" catchtap='onCollectedTap'></image>
+       <image wx:else src="/images/icon/collection-anti.png" class="cPic" catchtap='onCollectedTap'></image>
+       <image src="/images/icon/share.png" class="sPic" catchtap="onShareTap"></image>
+    </view>
+    <view class="line"></view>
+  </view>
+  <text class="detail">
+   {{newsdata.detail}}
+  </text>
+  <button bindtap='choose' style="font-size:24rpx;width:80%; margin-bottom:20rpx;">购买</button>
+</view>

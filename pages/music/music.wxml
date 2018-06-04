@@ -1,0 +1,28 @@
+<view class="container">
+    <swiper indicator-dots="true" autoplay='{{isAuto}}' interval='3000' duration="500" circular="true"  current="{{currentIndex}}">
+      <swiper-item  wx:for="{{music}}" wx:for-item="item" wx:for-index="idx">
+        <image src="{{item.img}}"></image>
+        <image src="{{item.isPlay?'/images/music-stop.png':'/images/music-start.png'}}" class="audio" catchtap='picTap' data-Id="{{idx}}" ></image>
+       
+      </swiper-item>
+    </swiper>
+
+  <view class="head">
+      <dl class="clearfix">
+         <dd class="name">歌曲</dd>
+         <dd class="artList">歌手</dd>
+         <dd class="heat">热度</dd>
+         <dd class="heat">时长</dd>
+      </dl>
+  </view>
+  <ul class="musicList clearfix">
+   <block  wx:for="{{music}}" wx:for-item="item" wx:for-index="idx">
+       <li catchtap="listTap" data-Id="{{idx}}">
+          <view class="name">{{item.name}}</view>
+          <view class="artList">{{item.artList}}</view>
+          <view class="heat">{{item.heat}}</view>
+          <view class="listRight">{{item.duration}}</view>
+       </li>
+     </block>
+  </ul>
+</view>

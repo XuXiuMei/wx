@@ -1,0 +1,71 @@
+
+.newsContainer{
+  display:flex;
+  flex-direction: column;
+  margin-top:20rpx;
+   margin-bottom:40rpx;
+   background-color: #fff;
+   border-bottom: 1px solid #ededed;
+   border-top: 1px solid #ededed;
+   padding-bottom: 5px;
+}
+.headDate{
+  display:flex;
+  flex-direction: row;
+   margin-top:10rpx;
+   margin-bottom:2px;
+    margin-left:10rpx;
+}
+.authorPic{
+  width: 60rpx;
+  height:60rpx;
+  vertical-align: middle;
+  margin-bottom:2px;
+
+
+}
+.authorText{
+    margin-left:20rpx;
+    vertical-align: middle;
+    margin-top:6px;
+    font-size: 26rpx;
+}
+.newsTitle{
+font-weight: 600;
+ font-size: 34rpx;
+ color: #333;
+  margin-bottom:10px;
+}
+.mainPic{
+  width: 100%;
+  height:260px;
+  margin-bottom: 5px;
+}
+.newsContent{
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 20rpx;
+  margin-left:20rpx;
+  letter-spacing: 2rpx;
+  line-height: 40rpx;
+}
+
+.newsLike{
+  font-size: 13rpx;
+ display: flex;
+ flex-direction: row;
+ line-height: 16px;
+ margin-left: 10px;
+}
+
+.newsLikeImage{
+  width:16px;
+  height:16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.newsLikeText{
+  vertical-align: middle;
+  margin-right: 20px;
+  color: #666;
+}

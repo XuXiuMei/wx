@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+   <image src="../../images/cat.jpg" style="width:200rpx;height:200rpx;" class="pic"></image>
+  <text class="username">Hi，艾瑞巴蒂~</text>
+  <button class='box' open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">
+       <text class="goto" catchtap='mm'>Welcome</text>
+  </button>
+</view>

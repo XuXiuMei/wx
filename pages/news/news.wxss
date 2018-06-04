@@ -1,0 +1,9 @@
+@import 'template/news-template.wxss'
+swiper,swiper-item image{
+width:100%;
+height:480rpx;
+}
+text{
+    font-family:MicroSoft Yahei;
+    font-size: 24rpx;
+}

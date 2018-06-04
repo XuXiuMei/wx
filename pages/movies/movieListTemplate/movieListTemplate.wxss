@@ -1,0 +1,38 @@
+@import "../movieTemplate/movieTemplate.wxss";
+.movieListContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.innerContainer{
+  width: 100%;
+  margin:0 auto 20rpx;
+}
+.movieHead{
+  padding:30rpx 20rpx 22rpx;
+ 
+}
+.slogan{
+  font-size: 24rpx;
+}
+
+.more {
+  float: right;
+}
+
+.moreText{
+  vertical-align: middle;
+  margin-right: 10rpx;
+  color: #1f4ba5;
+  font-size: 24rpx;
+ 
+}
+.moreImg{
+  width: 9rpx;
+  height: 16rpx;
+  vertical-align: middle;
+}
+.moviesContainer{
+  display: flex;
+  flex-direction: row;
+}

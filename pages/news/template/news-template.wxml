@@ -1,0 +1,17 @@
+<template name="news-template">
+  <view class="newsContainer">
+    <view class="headDate">
+      <image src="{{avatar}}" class="authorPic"></image>
+      <text class="authorText">{{date}}</text>
+    </view>
+    <text class="newsTitle">{{title}}</text>
+    <image src="{{imgSrc}}" class="mainPic"></image>
+    <text class="newsContent">{{content}}</text>
+    <view class="newsLike">
+      <image src="/images/icon/chat.png" class="newsLikeImage"></image>
+      <text class='newsLikeText'>{{collection}}</text>
+      <image src="/images/icon/view.png" class="newsLikeImage"></image>
+      <text class='newsLikeText'>{{reading}}</text>
+    </view>
+  </view>
+</template>

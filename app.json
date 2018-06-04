@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/goods/goods",
+    "pages/goods/shopCart/shopCart",
+    "pages/goods/goodsDetail/goodsDetail",
+    "pages/news/news",
+    "pages/news/news-detail/news-detail",
+    "pages/movies/movies",
+    "pages/music/music",
+    "pages/movies/moreMovie/moreMovie",
+    "pages/movies/movieDetail/movieDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#CC6699",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#666699",
+    "list": [
+      {
+        "pagePath": "pages/news/news",
+        "text": "我的新闻",
+        "iconPath": "images/tab/read.png",
+        "selectedIconPath": "images/tab/readActive.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "我的电影",
+        "iconPath": "images/tab/movie.png",
+        "selectedIconPath": "images/tab/movieActive.png"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "我的音乐",
+        "iconPath": "images/tab/music.png",
+        "selectedIconPath": "images/tab/musicActive.png"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "text": "我的商城",
+        "iconPath": "images/tab/shopCart.png",
+        "selectedIconPath": "images/tab/shopCartActive.png"
+      }
+    ]
+  }
+}

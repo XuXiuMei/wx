@@ -1,0 +1,55 @@
+<import src='../starsTemplate/starsTemplate.wxml' />
+
+<view class="container">
+  <image src="{{movie.movieImg}}" class="headImg" mode="aspectFill"></image>
+  <view class="headImgHover">
+    <text class="mainTitle">{{movie.title}}</text>
+    <text class="subTitle">{{movie.country+'.'+movie.year}}</text>
+    <view class="like">
+      <text class="highLightFont">{{movie.wishCount}}</text>
+      <text class="plainFont">人喜欢</text>
+      <text class="highLightFont">{{movie.commentCount}}</text>
+      <text class="plainFont">条评论</text>
+    </view>
+  </view>
+  <image class="movieImg" src="{{movie.movieImg}}" data-src="{{movie.movieImg}}" catchtap='previewTap'></image>
+  <view class="summary">
+    <view class="originalTitle">
+      <text>{{movie.originalTitle}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">评分</text>
+      <template is="starsTemplate" data="{{stars:movie.stars,score:movie.score}}" />
+    </view>
+    <view class="flex-row">
+      <text class="mark">导演</text>
+      <text>{{movie.director.name}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">影人</text>
+      <text>{{movie.casts}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">类型</text>
+      <text>{{movie.genres}}</text>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="describe">
+    <text class="describeTitle">剧情简介</text>
+    <text class="textContent">{{movie.summary}}</text>
+  </view>
+  <view class="hr"></view>
+  <view class="cast">
+    <text class="castTitle">影人</text>
+    <scroll-view class="castImgs" scroll-x="true" style="width:100%">
+      <block wx:for="{{movie.castsInfo}}" wx:for-item="item">
+        <view class="castContainer">
+          <image class="castImg" src="{{item.img}}"></image>
+          <text class="castName">{{item.name}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+<button bindtap='choose' style="font-size:24rpx;width:80%; margin-bottom:20rpx;">购买</button>
+</view>

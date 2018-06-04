@@ -1,0 +1,57 @@
+.goodsContainer {
+  height: 1300rpx;
+  margin: 40rpx 0 40rpx 6rpx;
+  margin-left: 10rpx;
+  
+}
+
+.detail >.count {
+  float: right;
+  text-align: right;
+  font-size: 15px;
+}
+
+/*撑开，去除浮动没有的高度*/
+
+.detail {
+  overflow: hidden;
+  padding: 0 10rpx 0 10rpx
+}
+
+li {
+  float: left;
+  margin-bottom: 10rpx;
+  display: flex;
+  width: 320rpx;
+  height: 400rpx;
+  flex-direction: column;
+  padding: 0 22rpx;
+}
+li{
+  position: relative;
+}
+.desc {
+  color: #d8d8d8;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 16rpx;
+  font-size: 24rpx;
+  position: absolute;
+  left: 20rpx;
+  bottom: 60rpx;
+  width: 320rpx;
+}
+
+.goodsImg {
+  width: 320rpx;
+  height: 400rpx;
+  padding-bottom: 20rpx;
+}
+
+.title {
+  margin-bottom: 16rpx;
+  font-size: 28rpx;
+}
+.money{
+  color:red;
+  font-size: 30rpx;
+}

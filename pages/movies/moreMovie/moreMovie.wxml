@@ -1,0 +1,2 @@
+<import src="../movieGridTemplate/movieGridTemplate.wxml" />
+<template is="movieGridTemplate" data="{{movies}}" />

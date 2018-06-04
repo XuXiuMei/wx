@@ -1,0 +1,17 @@
+<view class="goodsContainer">
+  <ul>
+    <li wx:for="{{goods}}" wx:for-item="item" bindtap="onGoodTap" data-goodId="{{item.id}}">
+      <image src="{{item.img}}" class="goodsImg"></image>
+      <view class="title">{{item.title}}</view>
+        <view class="desc">
+          <view class="sell">
+            <text class="money">￥{{item.money}}</text>
+          </view>
+          <view class="detail">
+            <text class="hot">热卖中</text>
+            <text class="count">剩{{item.count}}件 </text>                         
+          </view>
+        </view>
+    </li>
+  </ul>
+</view>

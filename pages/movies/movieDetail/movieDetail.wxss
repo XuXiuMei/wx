@@ -1,0 +1,134 @@
+@import "../starsTemplate/starsTemplate.wxss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+}
+
+.headImg {
+  width: 100%;
+  height: 320rpx;
+  -webkit-filter: blur(20px);
+}
+
+.headImgHover {
+  width: 100%;
+  height: 320rpx;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.mainTitle {
+  font-size: 19px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 50rpx;
+  margin-left: 40rpx;
+  letter-spacing: 2px;
+}
+
+.subTitle {
+  font-size: 28rpx;
+  color: #fff;
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+
+.like {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+.highLightFont{
+  color:#f21146;
+  font-size: 22rpx;
+  margin-right: 10rpx;
+}
+.plainFont{
+  color:#666;
+  font-size: 22rpx;
+  margin-right: 30rpx;
+}
+.movieImg{
+  width: 175rpx;
+  height:238rpx;
+  position: absolute;
+  top: 160rpx;
+  right: 30rpx;
+}
+.summary{
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+  color:#777777;
+}
+.originalTitle{
+  color:#1f3463;
+  font-size: 24rpx;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+}
+.mark{
+  margin-right: 30rpx;
+  white-space: nowrap;
+  color: #999;
+}
+.hr{
+  margin-top: 45rpx;
+  height: 1px;
+  width:750rpx;
+  background-color: #d9d9d9;
+}
+.describe{
+  margin-left: 40rpx;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+}
+.textContent{
+  margin-top: 20rpx;
+  margin-right: 40rpx;
+  line-height: 40rpx;
+  letter-spacing: 1px;
+}
+.cast{
+  margin-left: 40rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rpx;
+}
+.castTitle{
+  color: #999;
+  margin-bottom: 40rpx;
+}
+.castContainer{
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 50rpx;
+  margin-right: 40rpx;
+  width: 170rpx;
+  text-align: center;
+  white-space: normal;
+}
+.castImgs{
+  white-space: nowrap;
+}
+.castImg{
+  width: 170rpx;
+  height: 210rpx;
+}
+castName{
+  margin: 10rpx auto  0;
+}
+.describeTitle{
+  color:#999;
+}

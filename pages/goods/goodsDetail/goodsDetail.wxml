@@ -1,0 +1,42 @@
+<view class="goodContainer">
+  <view class="headImg">
+    <image src="{{good.img}}" class="goodImg"></image>
+  </view>
+
+  <view class="product-desc">
+    <ul>
+      <li class="first">
+        <view class="product-desc-span">
+          {{good.title}}
+        </view>
+      </li>
+
+      <li class="price-li">
+        市场价：
+        <text class="money">￥{{good.money}}</text>
+      </li>
+      <li class="number-li">购买数量：
+        <view bindtap="substract">-</view>
+        <view class="number">{{number}}</view>
+        <view bindtap="add">+</view>
+      </li>
+      <li class="action">
+        <button class="buy" bindtap='buy'>立即购买</button>
+        <button bindtap="addShopCart" class="addShopCart">加入购物车</button>
+      </li>
+    </ul>
+  </view>
+  <view class="product-props">
+    <ul>
+      <li>商品参数</li>
+      <li>商品货号：{{good.goods_no}}</li>
+      <li>库存情况：{{good.count}}</li>
+      <li>上架时间：:{{good.add_time}}</li>
+    </ul>
+  </view>
+  <view class='tool'>
+    <button class="contact" open-type="contact">联系客服</button>
+    <view class='circle' wx-if="{{isShow}}">{{num}}</view>
+   <button class="shopCart" bindtap="goShopCart">购物车</button>
+  </view>
+</view>

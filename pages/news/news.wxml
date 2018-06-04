@@ -1,0 +1,20 @@
+<import src='template/news-template.wxml'/>
+<view class="container">
+    <swiper indicator-dots="true" autoplay='true' interval='3000' duration="500" circular="true">
+      <swiper-item>
+        <image src="../../images/newsPic/girl.jpg"></image>
+      </swiper-item>
+       <swiper-item>
+        <image src="../../images/newsPic/news.jpg"></image>
+      </swiper-item>
+       <swiper-item>
+        <image src="../../images/newsPic/love.jpg"></image>
+      </swiper-item>
+    </swiper>
+</view>
+
+<block wx:for="{{news}}" wx:for-item="item" wx:for-index="idx">
+<view catchtap='onDetail' data-newsId="{{item.newsId}}">
+  <template is="news-template" data="{{...item}}"/>
+  </view>
+</block>

@@ -1,0 +1,32 @@
+.pic{
+  border-radius:50%;
+  margin-top:160rpx;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.username{
+  font-size:32rpx;
+  font-weight: bold;
+  margin-top:100rpx;
+}
+.box{
+ margin-top:200rpx;
+  width: 200rpx;
+  border-radius: 5rpx;
+  text-align: center;
+  color:#405f80;
+  vertical-align: middle;
+  
+}
+
+.goto{
+  font-size:22rpx;
+
+}
+page{
+  height:100%;
+  background-color: #f2f2f6;
+}

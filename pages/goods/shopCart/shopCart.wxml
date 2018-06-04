@@ -1,0 +1,31 @@
+<view class="shopCartContainer">
+     <view class="pay-detail">
+            <ul>
+                <li class="p-list" wx:for="{{myGoods}}" wx:for-item="item" wx:for-index="idx">
+                    <switch color='#CC6699' class='select' checked="{{isPicked}}" bindchange="onChange" data-pickedId="{{item.id}}"></switch>
+                    <image src="{{item.img}}" class="img"></image>
+                    <view class="pay-calc">
+                        <text class='title'>{{item.title}}</text>
+                        <view class="calc">
+                            <text class='money'>￥{{item.money}}</text>
+                            <view bindtap="sub" data-subId="{{item.id}}">-</view>
+                            <view class='number' data-pickedId="{{item.id}}">{{prods[item.id]}}</view>
+                            <view bindtap="add" data-addId="{{item.id}}">+</view>
+                            <text bindtap="delone" class='del' data-delId="{{item.id}}">删除</text>
+                        </view>
+                        <view class='hr'></view>
+                    </view>
+                </li>
+            </ul>
+        </view>
+        <view class="show-price">
+            <view class="show-1">
+                <text>总计(不含运费):</text>
+                <text>已经选择商品{{countChecked}}件，总价￥{{sumChecked}}元</text>
+            </view>
+            <view class="show-2">
+                <button bindtap='buy' class='buy'>去结算</button>
+            </view>
+        </view>
+      
+</view>

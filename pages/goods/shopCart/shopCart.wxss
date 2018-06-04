@@ -1,0 +1,85 @@
+.pay-detail {
+  margin: 30rpx;
+  height: 1000rpx;
+  overflow: auto;
+}
+
+.p-list{
+  height: 165rpx;
+  width: 700rpx;
+  list-style: none;
+  margin-bottom: 10rpx;
+}
+.hr{
+  width: 690rpx;
+  height: 1px;
+  background-color:rgba(0, 0, 0, 0.1); 
+  margin-bottom: 30rpx;
+  margin-top: 20rpx;
+}
+.pay-detail ul {
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+.img {
+  width: 200rpx;
+  height: 200rpx;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10rpx;
+}
+
+.title {
+  font-size: 30rpx;
+  color: #c69;
+}
+
+.calc {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+}
+
+.calc view {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 45rpx;
+  text-align: center;
+}
+
+.number {
+  border-left-width: 0rpx;
+  border-right-width: 0rpx;
+}
+
+.money {
+  margin-right: 20rpx;
+}
+
+.del {
+  margin-left: 20rpx;
+}
+
+.show-1, .show-2 {
+  display: inline-block;
+}
+.show-2{
+  margin-top: 20rpx;
+}
+.show-price {
+  font-size: 30rpx;
+  background-color: #ccc;
+  padding: 30rpx 20rpx 0 20rpx;
+  position: absolute;
+  bottom: 0;
+}
+
+.buy {
+  font-size: 30rpx;
+  color: #fff;
+  background-color: #c69;
+  width: 200rpx;
+  margin: auto 20rpx 10rpx 0;
+}
